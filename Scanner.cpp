@@ -20,7 +20,8 @@ Scanner::Scanner() {
     error_count = 0;
 }
 
-void Scanner::processFile(fs::path file_to_scan) {
+// file processing and passing into scanning function
+void Scanner::processFile(const fs::path file_to_scan) {
     scanned_total++;
     if (fs::extension(file_to_scan) == ".js") {
         if (scanFile(file_to_scan, "<script>evil_script()</script>")) {
@@ -38,7 +39,8 @@ void Scanner::processFile(fs::path file_to_scan) {
     }
 }
 
-bool Scanner::scanFile(fs::path file_to_scan, std::string sus_line) {
+// scanning file line by line
+bool Scanner::scanFile(const fs::path file_to_scan, const std::string sus_line) {
     try {
         fs::ifstream file(file_to_scan);
         std::string cur_str;
@@ -55,7 +57,7 @@ bool Scanner::scanFile(fs::path file_to_scan, std::string sus_line) {
     }
 }
 
-void Scanner::printReport() {
+void Scanner::printReport() const{
     std::cout << "====== Scan result ======" << std::endl;
     std::cout << "Processed files: " << scanned_total << std::endl;
     std::cout << "JS detects: " << sus_JS_count << std::endl;

@@ -24,8 +24,8 @@ public:
     Scanner();
     void processFile(fs::path file_to_scan);
     bool scanFile(fs::path file_to_scan, std::string sus_line);
-    void printReport();
+    void printReport() const;
 };
 
 
-#endif //TEST_ASSIGNMENT_MOSCOW_SCANNER_H
+#endif //SCAN_UTIL_KASPERSKY_TEST_H
