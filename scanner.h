@@ -22,13 +22,13 @@ class Scanner {
     counter sus_EXE_count_;
     counter error_count_;
     ch::high_resolution_clock::time_point start_point;
-    // scanner scans file for the sus line and returns true if the line found
+    // Scanner scans file for the sus line and returns true if the line found
     bool ScanFile(const fs::path &file_to_scan, const std::string &sus_line);
 public:
     Scanner();
-    // scanner checks file extension and chooses a suspicious line to scan for
+    // Scanner checks file extension and chooses a suspicious line to scan for
     void ProcessFile(const fs::path &file_to_scan);
-    // scanner can print the report any time user ask him to do so
+    // Scanner can print the report any time user ask him to do so
     // always prints report at the end of the scanning
     //
     //  report format
@@ -44,4 +44,4 @@ public:
 };
 
 
-#endif //SCAN_UTIL_KASPERSKY_TEST_H
+#endif //SCAN_UTIL_KASPERSKY_TEST_SCANNER_H

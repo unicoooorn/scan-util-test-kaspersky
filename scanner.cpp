@@ -2,7 +2,7 @@
 // Created by Roman Gostilo on 11.06.2022.
 //
 
-#include "Scanner.h"
+#include "scanner.h"
 #include <iostream>
 #include <exception>
 

@@ -6,8 +6,8 @@
 #include <boost/foreach.hpp>
 #include <boost/asio.hpp>
 #include <boost/thread.hpp>
-#include "ScanUtility.h"
-#include "Scanner.h"
+#include "scan_utility.h"
+#include "scanner.h"
 #include <iostream>
 
 

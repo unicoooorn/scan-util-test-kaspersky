@@ -8,7 +8,7 @@ include_directories(${Boost_INCLUDE_DIR})
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(scan_util main.cpp Scanner.cpp Scanner.h ScanUtility.cpp ScanUtility.h)
+add_executable(scan_util main.cpp scanner.cpp scanner.h scan_utility.cpp scan_utility.h)
 target_link_libraries(scan_util PRIVATE
         "/usr/local/Cellar/boost/1.78.0_1/lib//libboost_filesystem.a"
         "/usr/local/Cellar/boost/1.78.0_1/lib//libboost_chrono.a"
