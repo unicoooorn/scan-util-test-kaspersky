@@ -9,8 +9,6 @@
 namespace fs = boost::filesystem;
 namespace ch = boost::chrono;
 
-typedef unsigned int counter;
-
 Scanner::Scanner() {
     start_point = ch::high_resolution_clock::now();
     scanned_total = 0;
@@ -21,7 +19,7 @@ Scanner::Scanner() {
 }
 
 // file processing and passing into scanning function
-void Scanner::processFile(const fs::path file_to_scan) {
+void Scanner::processFile(const fs::path &file_to_scan) {
     scanned_total++;
     if (fs::extension(file_to_scan) == ".js") {
         if (scanFile(file_to_scan, "<script>evil_script()</script>")) {
