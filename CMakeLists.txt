@@ -12,4 +12,5 @@ add_executable(scan_util main.cpp Scanner.cpp Scanner.h ScanUtility.cpp ScanUtil
 target_link_libraries(scan_util PRIVATE
         "/usr/local/Cellar/boost/1.78.0_1/lib//libboost_filesystem.a"
         "/usr/local/Cellar/boost/1.78.0_1/lib//libboost_chrono.a"
+        "/usr/local/Cellar/boost/1.78.0_1/lib//libboost_thread-mt.a"
         )

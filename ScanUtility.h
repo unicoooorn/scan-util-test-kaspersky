@@ -2,13 +2,13 @@
 // Created by Roman Gostilo on 11.06.2022.
 //
 
-#ifndef TEST_ASSIGNMENT_MOSCOW_SCANUTILITY_H
-#define TEST_ASSIGNMENT_MOSCOW_SCANUTILITY_H
+#ifndef SCAN_UTIL_KASPERSKY_TEST_SCANUTILITY_H
+#define SCAN_UTIL_KASPERSKY_TEST_SCANUTILITY_H
 
 #include <string>
 
-namespace utilscan {
-    void scan_directory(std::string &&path);
+namespace util_scan {
+    void ScanDirectory(std::string &&path);
 }
 
-#endif //TEST_ASSIGNMENT_MOSCOW_SCANUTILITY_H
+#endif //SCAN_UTIL_KASPERSKY_TEST_SCANUTILITY_H
