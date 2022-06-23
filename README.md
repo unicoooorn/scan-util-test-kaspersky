@@ -18,7 +18,7 @@ EXE suspicious: файл с расширением EXE/DLL, содержащий
 
 >scan_util C:\Users\user\Downloads
 
-'''
+```
 ====== Scan result ======
 
 Processed files: 150
@@ -34,7 +34,7 @@ Errors: 1
 Execution time: 00:00:31 
 
 =========================
-'''
+```
 
 Для упрощения задачи условимся:
 
